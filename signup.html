@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <!-- Css -->
+    <link rel="stylesheet" href="css/signup.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="container text-center my-5">
+        <div class="w-75 mx-auto p-5 shadow">
+            <h1>Smart Login System</h1>
+            <input type="text" id="signUpName" name="name" placeholder="Enter your name" class="form-control my-3" oninput="validateForm(this)">
+            <input type="email" id="signUpEmail" name="email" placeholder="Enter your email" class="form-control my-3 text-white" oninput="validateForm(this)">
+            <input type="password" id="signUpPassword" name="password" placeholder="Enter your password" class="form-control my-3" oninput="validateForm(this)">
+            <p id="reg-msg"></p>
+            <button class="btn btn-outline-info w-100 my-3" onclick="register()">Sign Up</button>
+            <p class="text-white">You have an account? <a href="signin.html" class="text-decoration-none text-white"> Sign In</a></p>
+        </div>
+
+    </div>
+
+<script src="js/index.js"></script>
+</body>
+</html>
