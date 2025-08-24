@@ -84,7 +84,7 @@ function login() {
         if (users[i].email === email) {
             if (users[i].password === password) {
                 localStorage.setItem('loggedUser', JSON.stringify(users[i]));
-                window.location.href = "home.html"; 
+                window.location.href = "index.html"; 
                 return; 
             } else {
                 regMsg.innerHTML = 'Incorrect password or email';
